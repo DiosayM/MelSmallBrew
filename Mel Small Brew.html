@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+  <html>
+        <head>
+		<title>Mel Small brew</title>
+		<link rel="icon"type="image/x-icon"href="pictures/logu.JPG">
+		<link rel="stylesheet" href="Css Files/mel.css">
+		
+        </head>
+		
+		<body>
+		<script>       
+				function openNav() {
+				  document.getElementById("mySidenav").style.width = "250px";
+				}
+
+				function closeNav() {
+				  document.getElementById("mySidenav").style.width = "0";
+				}
+					 document.addEventListener('DOMContentLoaded', function() {
+				var scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+				window.addEventListener('scroll', function() {
+				  if (window.scrollY > 300) {
+					scrollToTopBtn.style.display = 'block';
+				  } else {
+					scrollToTopBtn.style.display = 'none';
+				  }
+				});
+
+				scrollToTopBtn.addEventListener('click', function() {
+				  window.scrollTo({
+					top: 0,
+					behavior: 'smooth'
+				  });
+				});
+			  });
+			</script>
+		<!-- Responsive Side Menu -->
+		<div class="open-menu-btn" onclick="openNav()">&#9776; </div>
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn"  onclick="closeNav()">&times;</a>
+			<a href="home">HOME</a>
+			<a href="store.html">STORE</a>
+			<a href="ABOUT.html">ABOUT</a>
+			<a href="#Services">SERVICES</a>
+			<a href="Contact.html">CONTACT</a>
+			<a href="Log-in.html">SIGN-OUT</a>
+		</div>
+		<header>
+				<nav>
+					<ul>  
+					<li><a href="home.html" style="float: left; margin-left:20px;">HOME</a></li>
+					<li><a href="store.html" style="float: left; margin-left:20px;">STORE</a></li>                      
+					<li><a href="ABOUT.html" style="float: left; margin-left:20px;">ABOUT</a></li>
+					<li><a div style="text-align: left; margin-left:10px;"></a></li>
+					<li><a href="Log-in.html" style="float: right; margin-right:70px;">SIGN-OUT</a></li>
+					<li><a href="Contact.html" style="float: right; margin-right:20px;">CONTACT</a></li>
+					</ul>
+				</nav>
+				<div class="shopping-cart"><a href="mycashier.html">&#128722;</a></div>
+				
+			</header>
+		
+          <img src="logu.JPG" id="logu">
+		  <h1 style="font-size: 500%;margin-top:1%;">Mel Small Brew</b></h1>
+		  <p>Sweet dreams are made of teas</p>
+		   <main id="menu">
+			<figure>
+				<img src="pictures/milktea.JPG" id="pictures" alt="Product Image">
+				<figcaption>Milktea - 39 pesos</figcaption>
+				<figcaption style="font-size: 20px">Dive into a world of flavor with <br>our MilkTea! Crafted from the finest<br> tea leaves, brewed to perfection,<br> and blended with creamy milk, our Milk<br>Tea promises a delightful <br>journey for your taste buds.</figcaption>
+			</figure>
+			<figure>
+				<img src="pictures/milkshake.JPG" id="pictures" alt="Product Image">
+				<figcaption>Milkshake - 59 pesos</figcaption>
+				<figcaption style="font-size: 20px">Craving something sweet, smooth<br> and utterly delicious? Our creamy<br> milkshake is just what you need.</figcaption>
+			</figure>			
+			<figure>
+				<img src="pictures/coffee.JPG" id="pictures">
+				<figcaption>Coffee - 85 pesos</figcaption>
+				<figcaption style="font-size: 20px">Feeling The chill? <br> Need some warmth? <br> Look no further our hot coffee <br> is here to the rescue! Savor<br>  the rich, aromatic taste of <br> freshly ground beans with every sip. </figcaption>
+			</figure>
+		</main>
+		<main>
+		   
+		   <div id="myBox">
+		   <article>
+		 
+		   <h2><big>Milk Tea</big></h2>
+		   <ul style="list-style: none; text-align: justify;">
+		   <li><big>Matcha</big></li>
+		   <li><big>Cookies</big></li>
+		   <li><big>Double Dutch </big></li>
+		   <li><big>Red Velvet</big></li>
+		   <li><big>Okinawa</big></li>
+		   </ul>
+		   
+		   </article>
+		   </div>
+		   
+		   <div id="myBox">
+		   <section>
+		   <h2><big>Milk Shake</big></h2>
+		   <ul style="list-style: none; text-align: justify;">
+		   <li><big>Mango Shake</big></li>
+		   <li><big>Cookies & Cream</big></li>
+		   <li><big>Vanilla</big></li>
+		   <li><big>Strawberry</big></li>
+		   <li><big>Banana Shake</big></li>   
+		   </ul>
+		   </section>
+		   </div>
+		   
+		   <div id="myBox">
+		   <aside>
+		   <h2><big>Hot Coffee</big></h2>
+		   <ul style="list-style: none; text-align: justify;">
+		   <li><big>Choco Coffee</big></li>
+		   <li><big>Black Coffee</big></li>
+		   <li><big>Cappucino</big></li>
+		   <li><big>Espresso Shot</big></li>
+		   <li><big>Lattes</big></li>
+		   <li><big>Macchiatos</big></li>
+		   </ul>
+		   </aside>
+		   </div>
+		   </main>  
+		
+		<p><small>@Develop by Melanie Diosay</small></p>
+		</footer>
+		</body>	
+   </html>
+   

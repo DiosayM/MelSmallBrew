@@ -1,0 +1,210 @@
+<!doctype html>
+<html>
+
+<head>
+	<link rel="icon"type="image/x-icon"href="pictures/logu.JPG">
+<title>Store</title>
+
+<style>
+
+
+		body {
+		font-family:arial;
+		text-align:center;
+		background-color:#FFEBCD;
+		}
+		header {
+				background-color: #DEB887;
+				color: black;
+				padding: 5px;
+				text-align: center;
+				font-size: 80%;}
+		nav ul li {
+		display:inline;
+		margin-right:20px;
+		}
+		nav ul li a{
+				text-decoration: none;/*para mawala ang underline sa link*/
+				color: black;
+				}
+		
+        article, section, aside{
+		        flex: 1;
+				margin: 0 10px;
+				padding: 100px;
+				border: 3px solid black;
+				border-radius: 10px;
+				background-color: olive;
+				box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+				margin-bottom: 20px;
+				font-size: 130%;
+				text-align: justify;
+		}
+		
+		#pictures {
+			height: 350px;
+			width: 370px;
+			margin-right: 10px;
+		}
+.shopping-cart {
+				position: absolute;
+				top: 30px;
+				right: 30px;
+				transform: translateY(-50%);
+				font-size: 20px;
+				color:white;
+				cursor: pointer;}
+				/*Side Menu Bar - Javascript*/
+		.sidenav {
+				height: 100%;
+				width: 0;
+				position: fixed;
+				z-index: 1;
+				top: 0;
+				left: 0;
+				background-color: #111;
+				overflow-x: hidden;
+				transition: 1.5s;
+				padding-top: 60px;}
+			.sidenav a {
+				padding: 8px 8px 8px 32px;
+				text-decsoration: none;
+				font-size: 80%;
+				color: #818181;
+				display: block;
+				transition: .3s;}
+			.sidenav a:hover {
+				color: saddlebrown;}
+			.sidenav .closebtn {
+				position: absolute;
+				top: 0;
+				right: 25px;
+				font-size: 36px;
+				margin-left: 50px;}
+			@media screen and (max-height: 450px) {
+				.sidenav {padding-top: 15px;}
+				.sidenav a {font-size: 16px;}}
+			/*Menu Bar Button - Javascript*/	
+			.open-menu-btn{
+				color: saddlebrown;
+				font-size: 150%;
+				cursor: pointer;
+				position: absolute;
+				top: 15px;
+				left: 15px;}
+</style>
+
+</head>
+
+<body>
+<script>       
+				function openNav() {
+				  document.getElementById("mySidenav").style.width = "250px";
+				}
+
+				function closeNav() {
+				  document.getElementById("mySidenav").style.width = "0";
+				}
+					 document.addEventListener('DOMContentLoaded', function() {
+				var scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+				window.addEventListener('scroll', function() {
+				  if (window.scrollY > 300) {
+					scrollToTopBtn.style.display = 'block';
+				  } else {
+					scrollToTopBtn.style.display = 'none';
+				  }
+				});
+
+				scrollToTopBtn.addEventListener('click', function() {
+				  window.scrollTo({
+					top: 0,
+					behavior: 'smooth'
+				  });
+				});
+			  });
+			</script>
+		<!-- Responsive Side Menu -->
+		<div class="open-menu-btn" onclick="openNav()">&#9776; </div>
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn"  onclick="closeNav()">&times;</a>
+			<a href="store.html">STORE</a>
+			<a href="ABOUT.html">ABOUT</a>
+			<a href="#Services">SERVICES</a>
+			<a href="Contact.html">CONTACT</a>
+			<a href="Log-in.html">SIGN-OUT</a>
+		</div>
+		<header>
+				<nav>
+					<ul>  
+					<li><a href="store.html" style="float: left; margin-left:20px;">STORE</a></li>                      
+					<li><a href="ABOUT.html" style="float: left; margin-left:20px;">ABOUT</a></li>
+					<li><a div style="text-align: left; margin-left:10px;"></a></li>
+					<li><a href="Log-in.html" style="float: right; margin-right:70px;">SIGN-OUT</a></li>
+					<li><a href="Contact.html" style="float: right; margin-right:20px;">CONTACT</a></li>
+					</ul>
+				</nav>
+				<div class="shopping-cart"><a href="mycashier.html">&#128722;</a></div>
+				
+			</header>
+          <img src="pictures/logu.JPG" id="pictures">
+		  <h1 style="font-size: 500%;margin-top:1%;">Mel Small Brew</b></h1>
+		  <p>Sweet dreams are made of teas</p>
+
+        <main>
+		<div id="myBox">
+		   <article>
+		
+		<figure><big>
+<img src="pictures/milktea.JPG" id="pictures" alt="Product Image">
+		  <ul style="list-style: none; text-align: justify;">
+		  <figcaption><b>Milk Tea</b>.........................................................................................39</figcaption>
+		  <figcaption><b>Matcha</b>...........................................................................................39</figcaption>
+		  <figcaption><b>Cookies</b>..........................................................................................39</figcaption>
+		  <figcaption><b>Double Dutch</b>.....................................................................................39</figcaption>
+		  <figcaption><b>Red Velvet</b>.......................................................................................39</figcaption>
+		  <figcaption><b>Okinawa</b>..........................................................................................39</figcaption>
+		  </figure></big>
+		  </article>
+		   </div>
+
+        <div id="myBox">
+		   <section>
+ 
+		  <figure>
+		   <img src="pictures/milkshake.JPG" id="pictures" alt="Product Image">
+		   <ul style="list-style: none; text-align: justify;">
+		   <figcaption><b>Milk Shake</b>...................................................................59</figcaption>
+		   <figcaption><b>Mango Shake</b>..................................................................59</figcaption>
+		   <figcaption><b>Cookies & Cream</b>..............................................................59</figcaption>
+		   <figcaption><b>Vanilla</b>......................................................................59</figcaption>
+		   <figcaption><b>Strawberry</b>...................................................................59</figcaption>
+		   <figcaption><b>Banana Shake</b>.................................................................59</figcaption>
+		  </figure>
+		    </section>
+			<//div>
+		   
+		   
+		  <div id="myBox">
+		   <aside>
+		  
+		  <figure>
+		 <img src="pictures/coffee.JPG" id="pictures">
+		  <ul style="list-style: none; text-align: justify;">
+		  <figcaption><b>Hot Coffee</b>...........................................................................85</figcaption>
+		  <figcaption><b>Black Coffee</b>.........................................................................85</figcaption>
+		  <figcaption><b>Choco Coffee</b>.........................................................................85</figcaption>
+		  <figcaption><b>Cappucino</b>............................................................................85</figcaption>
+		  <figcaption><b>Espresso Shot</b>........................................................................85</figcaption>
+		  <figcaption><b>Lattes</b>...............................................................................85</figcaption>
+		  <figcaption><b>Macchiatos</b>...........................................................................85</figcaption>
+		  </figure>
+		  </aside>
+		  </div>
+		  
+		  </main>
+          
+		  
+</body>
+
+</html>

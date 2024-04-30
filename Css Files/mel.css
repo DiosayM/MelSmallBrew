@@ -1,0 +1,136 @@
+<style>
+
+		
+		body {
+		font-family:arial;
+		text-align:center;
+		background-color:  #FFD398;
+		}
+		header {
+				background-color: #DEB887;
+				color: black;
+				padding: 5px;
+				text-align: center;
+				font-size: 80%;}
+		nav ul li {
+		display:inline;
+		margin-right:20px;
+		}
+		nav ul li a{
+				text-decoration: none;/*para mawala ang underline sa link*/
+				color: black;
+				}
+		
+		main {
+		display:flex;
+		justify-content:space-between;
+		padding:1px
+		}
+		
+		article, section, aside{
+		        flex: 1;
+				margin: 0 10px;
+				padding: 100px;
+				border: 3px solid black;
+				border-radius: 10px;
+				background-color: salmon;
+				box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+				margin-bottom: 20px;
+				font-size: 130%;
+				text-align: justify;
+		}
+		
+		#logu{
+			max-width:200px;
+			height:200px;
+			margin-right:75%;
+			margin-top:5%;
+		}
+		#tea {
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			height: 80vh;
+			width:100%;
+			color:white;
+			display: flex
+			text-align: center;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			filter: brightness(50%);
+		}			
+		#shake {
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			height: 30vh;
+			width:900%;
+			color:white;
+			display: flex;
+			text-align: center;
+			flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				filter: brightness(50%);
+		}
+			
+		.shopping-cart {
+				position: absolute;
+				top: 30px;
+				right: 30px;
+				transform: translateY(-50%);
+				font-size: 20px;
+				color:white;
+				cursor: pointer;}
+				/*Side Menu Bar - Javascript*/
+		.sidenav {
+				height: 100%;
+				width: 0;
+				position: fixed;
+				z-index: 1;
+				top: 0;
+				left: 0;
+				background-color: #111;
+				overflow-x: hidden;
+				transition: 1.5s;
+				padding-top: 60px;}
+			.sidenav a {
+				padding: 8px 8px 8px 32px;
+				text-decsoration: none;
+				font-size: 80%;
+				color: #818181;
+				display: block;
+				transition: .3s;}
+			.sidenav a:hover {
+				color: saddlebrown;}
+			.sidenav .closebtn {
+				position: absolute;
+				top: 0;
+				right: 25px;
+				font-size: 36px;
+				margin-left: 50px;}
+			@media screen and (max-height: 450px) {
+				.sidenav {padding-top: 15px;}
+				.sidenav a {font-size: 16px;}}
+			/*Menu Bar Button - Javascript*/	
+			.open-menu-btn{
+				color: saddlebrown;
+				font-size: 150%;
+				cursor: pointer;
+				position: absolute;
+				top: 15px;
+				left: 15px;}
+		#pictures {
+			height: 350px;
+			width: 370px;
+			margin-right: 10px;
+		}
+		figure {
+		text-align: center;
+		}
+		figcaption {
+		margin-top: 10px;
+		font-weight: bold;
+		font-size:30px;
+		}

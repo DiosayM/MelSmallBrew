@@ -1,0 +1,249 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<link rel="icon"type="image/x-icon"href="pictures/logu.JPG">
+<style>
+
+header {
+				background-color: #DEB887;
+				color: black;
+				padding: 5px;
+				text-align: center;
+				font-size: 80%;}
+		nav ul li {
+		display:inline;
+		margin-right:20px;
+		}
+		nav ul li a{
+				text-decoration: none;/*para mawala ang underline sa link*/
+				color: black;
+				}
+body {
+  background-color: #FFEBCD;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #FFD398;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: olive;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: olive;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color:#555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+.shopping-cart {
+				position: absolute;
+				top: 30px;
+				right: 30px;
+				transform: translateY(-50%);
+				font-size: 20px;
+				color:white;
+				cursor: pointer;}
+				/*Side Menu Bar - Javascript*/
+		.sidenav {
+				height: 100%;
+				width: 0;
+				position: fixed;
+				z-index: 1;
+				top: 0;
+				left: 0;
+				background-color: #111;
+				overflow-x: hidden;
+				transition: 1.5s;
+				padding-top: 60px;}
+			.sidenav a {
+				padding: 8px 8px 8px 32px;
+				text-decsoration: none;
+				font-size: 80%;
+				color: #818181;
+				display: block;
+				transition: .3s;}
+			.sidenav a:hover {
+				color: saddlebrown;}
+			.sidenav .closebtn {
+				position: absolute;
+				top: 0;
+				right: 25px;
+				font-size: 36px;
+				margin-left: 50px;}
+			@media screen and (max-height: 450px) {
+				.sidenav {padding-top: 15px;}
+				.sidenav a {font-size: 16px;}}
+			/*Menu Bar Button - Javascript*/	
+			.open-menu-btn{
+				color: saddlebrown;
+				font-size: 150%;
+				cursor: pointer;
+				position: absolute;
+				top: 15px;
+				left: 15px;}
+
+</style>
+
+</head>
+
+
+
+
+
+<body>
+<script>       
+				function openNav() {
+				  document.getElementById("mySidenav").style.width = "250px";
+				}
+
+				function closeNav() {
+				  document.getElementById("mySidenav").style.width = "0";
+				}
+					 document.addEventListener('DOMContentLoaded', function() {
+				var scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+				window.addEventListener('scroll', function() {
+				  if (window.scrollY > 300) {
+					scrollToTopBtn.style.display = 'block';
+				  } else {
+					scrollToTopBtn.style.display = 'none';
+				  }
+				});
+
+				scrollToTopBtn.addEventListener('click', function() {
+				  window.scrollTo({
+					top: 0,
+					behavior: 'smooth'
+				  });
+				});
+			  });
+			</script>
+<!-- Responsive Side Menu -->
+		<div class="open-menu-btn" onclick="openNav()">&#9776; </div>
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn"  onclick="closeNav()">&times;</a>
+			<a href="store.html">STORE</a>
+			<a href="ABOUT.html">ABOUT</a>
+			<a href="#Services">SERVICES</a>
+			<a href="Contact.html">CONTACT</a>
+			<a href="Log-in.html">SIGN-OUT</a>
+		</div>
+<header>
+
+				<nav>
+					<ul>  
+					<li><a href="store.html" style="float: left; margin-left:20px;">STORE</a></li>                      
+					<li><a href="ABOUT.html" style="float: left; margin-left:20px;">ABOUT</a></li>
+					<li><a div style="text-align: left; margin-left:10px;"></a></li>
+					<li><a href="Log-in.html" style="float: right; margin-right:70px;">SIGN-OUT</a></li>
+					<li><a href="Contact.html" style="float: right; margin-right:20px;">CONTACT</a></li>
+					</ul>
+				</nav>
+				<div class="shopping-cart"><a href="mycashier.html">&#128722;</a></div>
+				
+			</header>
+
+  <h1>About Us Page</h1>
+  <p>Shake up your day with our milkshakes!</p>
+  <p>Delicious Mel Small Brew at your service.</p>
+
+
+<h2 style="text-align:center">Commentors</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="pictures/jm.JPG" alt="JM" style="width:99%">
+      <div class="container">
+        <h2>Jm Doe</h2>
+        <p class="title">Big costumer</p>
+        <p>Inline with my taste, that's why Mel Small Brew is my favourite hangout spot!</p>
+        <p><b>jm@gmail.com</b></p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+     <img src="pictures/jenzel.JPG" alt="JENZEL" style="width:60%">
+      <div class="container">
+        <h2>Jenzel Ross</h2>
+        <p class="title">Art Director</p>
+        <p>Every time I comeback, I always pass by Mel Small Brew, and it relieves my fatigue with its incredible delicousness! </p>
+        <p><b>rossjenzel@gmail.com</b></p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+       <img src="pictures/jennylou.JPG" alt="JENNYLOU" style="width:70%">  
+      <div class="container">
+        <h2>Jennylou Grey</h2>
+        <p class="title">Designer</p>
+        <p>This hangout spot is my favourite, Aside from its delicousness taste!</p>
+        <p><b>jennygrey@gmail.com</b></p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+
+</html>
